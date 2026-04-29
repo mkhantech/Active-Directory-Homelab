@@ -1,9 +1,9 @@
 # 🖥️ Active Directory Homelab (Work in Progress)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/virtualbox/virtualbox-original.svg" width="100" title="VirtualBox" alt="VirtualBox">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://raw.githubusercontent.com/Ileriayo/markdown-badges/master/logos/microsoft-ad.svg" width="100" title="Active Directory" alt="Active Directory">
+  <img src="https://img.shields.io/badge/VirtualBox-214378?style=for-the-badge&logo=virtualbox&logoColor=white" />
+  <img src="https://img.shields.io/badge/Active_Directory-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/Windows_Server-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
 </p>
 
 ## 📌 Overview
