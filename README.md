@@ -24,7 +24,7 @@ This project documents my journey building a hands-on Active Directory (AD) home
 
 ## 📂 Project Status
 > [!IMPORTANT]
-> **Current Status:** 🚧 Environment Setup (Following Kevtech Lab)
+> **Current Status:** 🚧 Environment Setup
 > This project is currently under development as I configure the virtual infrastructure.
 
 ## 📸 Lab Progress Gallery
