@@ -1,3 +1,4 @@
+<img width="275" height="183" alt="download (1)" src="https://github.com/user-attachments/assets/dd6eceaf-ae7d-489a-a951-6247150ff66a" />
 # 🖥️ Active Directory Homelab (Work in Progress)
 
 <p align="center">
