@@ -1,10 +1,9 @@
 # 🖥️ Active Directory Homelab (Work in Progress)
 
 <p align="center">
-  <img src="<img width="708" height="484" alt="1_cQGpZGkSuehv--YEXUweMQ" src="https://github.com/user-attachments/assets/96d29c0d-2435-482a-ae96-5f376fffc61f" />
-" width="200" />
+  <img src="https://github.com/user-attachments/assets/96d29c0d-2435-482a-ae96-5f376fffc61f" width="300" title="Active Directory" alt="Active Directory">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="PASTE_LINK_2_HERE" width="300" />
+  <img src="PASTE_VIRTUALBOX_LINK_HERE" width="200" title="VirtualBox" alt="VirtualBox">
 </p>
 
 ## 📌 Overview
