@@ -3,11 +3,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/96d29c0d-2435-482a-ae96-5f376fffc61f" width="300" title="Active Directory" alt="Active Directory">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/e9fcb535-ad18-4e58-a2b5-88b40246842b" width="200" title="VirtualBox" alt="VirtualBox">
-</p>
-
-
-" width="200" title="VirtualBox" alt="VirtualBox">
+  <img src="https://github.com/user-attachments/assets/e9fcb535-ad18-4e58-a2b5-88b40246842b" width="235" title="VirtualBox" alt="VirtualBox">
 </p>
 
 ## 📌 Overview
