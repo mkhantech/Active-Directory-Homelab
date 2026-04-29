@@ -1,10 +1,9 @@
-<img width="275" height="183" alt="download (1)" src="https://github.com/user-attachments/assets/dd6eceaf-ae7d-489a-a951-6247150ff66a" />
 # 🖥️ Active Directory Homelab (Work in Progress)
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/96d29c0d-2435-482a-ae96-5f376fffc61f" width="300" title="Active Directory" alt="Active Directory">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/4ea184fe-1ee7-4c95-856e-2cfc6eeeeca1" width="200" title="VirtualBox" alt="VirtualBox">
+  <img src="https://github.com/user-attachments/assets/e9fcb535-ad18-4e58-a2b5-88b40246842b" width="200" title="VirtualBox" alt="VirtualBox">
 </p>
 
 
