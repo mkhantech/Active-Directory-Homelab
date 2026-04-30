@@ -1,5 +1,4 @@
-# 🖥️ Active Directory Homelab (Work in Progress)
-
+# Active Directory Homelab
 <p align="center">
   <img src="https://github.com/user-attachments/assets/96d29c0d-2435-482a-ae96-5f376fffc61f" width="250" title="Active Directory" alt="Active Directory">
   &nbsp;&nbsp;&nbsp;&nbsp;
