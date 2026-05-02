@@ -36,9 +36,18 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 <details>
 <summary><b>Step 1: Virtual Machine Configuration</b></summary>
 <br>
-Provisioning the Windows Server 2022 virtual instance. Resources are allocated with 2 vCPUs and 8GB of RAM to maintain optimal performance for the Domain Controller role.
+The virtual machine is provisioned within Oracle VirtualBox to support the Windows Server 2022 environment. The resource allocation is optimized for the Domain Controller role, ensuring stable performance for identity management tasks.
 <br><br>
-<img src="https://via.placeholder.com/800x450?text=Placeholder:+VirtualBox+Configuration+Screenshot" width="100%">
+
+**Technical Specifications:**
+* **VM Name:** AD-Lab-Server
+* **Base Memory:** 8192 MB (8GB)
+* **Processors:** 2 CPUs
+* **Storage:** 50.00 GB VDI
+* **Network:** NAT (Initial Setup)
+
+<br>
+<img src="https://github.com/user-attachments/assets/552f679c-45d9-405b-9c6b-1d255ac852de" width="100%" alt="VirtualBox Configuration Settings">
 </details>
 
 <details>
