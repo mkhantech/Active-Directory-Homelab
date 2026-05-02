@@ -47,7 +47,10 @@ The virtual machine is provisioned within Oracle VirtualBox to support the Windo
 * **Network:** NAT (Initial Setup)
 
 <br>
-<img src="<img width="1919" height="987" alt="image" src="https://github.com/user-attachments/assets/630de0d5-aa9a-4538-9ac1-64f73e2dbc57" />
+<img src="https://github.com/user-attachments/assets/cbafd8b9-ae79-42ed-8fa9-ef8c8d3acefc" width="100%" alt="VirtualBox Configuration Settings">
+</details>
+<img src=<img width="1919" height="987" alt="Screenshot 2026-05-02 194928" src="https://github.com/user-attachments/assets/cbafd8b9-ae79-42ed-8fa9-ef8c8d3acefc" />
+"<img width="1919" height="987" alt="image" src="https://github.com/user-attachments/assets/630de0d5-aa9a-4538-9ac1-64f73e2dbc57" />
 " width="100%" alt="VirtualBox Configuration Settings">
 </details>
 
