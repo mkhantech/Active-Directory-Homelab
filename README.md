@@ -64,20 +64,35 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 </details>
 
 <details>
-<summary><b>Step 3: Active Directory Domain Services (AD DS)</b></summary>
+<summary><b>Step 3: Active Directory Domain Services (AD DS) Installation & Promotion</b></summary>
 <br>
 
-1. **Role Selection:** Launched the **Add Roles and Features Wizard** and selected **Active Directory Domain Services**, including all required management tools.
-2. **Forest Deployment:** Initiated the Domain Controller promotion and selected **Add a new forest**, defining the root domain name as `kevtech.com`.
-3. **Configuration:** Configured Domain Controller options, including DNS server roles and Global Catalog (GC) placement.
-4. **Promotion & Installation:** Executed the installation and promotion process, allowing the server to finalize the schema and reboot as a primary Domain Controller.
+### 3.1 Role Selection
+Initiated the **Add Roles and Features Wizard** within Server Manager. Selected **Active Directory Domain Services** and confirmed the inclusion of all required management tools and sub-features.
 
-<br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/03fbb1b3-2dc6-4833-9ccc-478c8a3510e2" width="90%" alt="AD DS Role Selection">
-  <img src="https://github.com/user-attachments/assets/22551917-bca1-4fb2-8687-734066ec755e" width="90%" alt="Deployment Configuration">
-  <img src="https://github.com/user-attachments/assets/f781fbea-967f-42a6-b95f-6ce7253e89cd" width="90%" alt="Domain Controller Options">
-  <img src="https://github.com/user-attachments/assets/53565ab4-2b88-41e4-9150-4a3567e6acb0" width="90%" alt="Installation Progress">
+  <img src="https://github.com/user-attachments/assets/03fbb1b3-2dc6-4833-9ccc-478c8a3510e2" width="85%" alt="AD DS Role Selection">
+</p>
+
+### 3.2 Forest Configuration
+Selected **"Add a new forest"** as the deployment operation. Defined the Root Domain Name as `kevtech.com`, establishing the top-level container for the directory service.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/22551917-bca1-4fb2-8687-734066ec755e" width="85%" alt="Deployment Configuration">
+</p>
+
+### 3.3 Domain Controller Options
+Configured the **Domain Name System (DNS)** server and **Global Catalog (GC)** roles. Set the Directory Services Restore Mode (DSRM) password, which is critical for future AD recovery scenarios.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f781fbea-967f-42a6-b95f-6ce7253e89cd" width="85%" alt="Domain Controller Options">
+</p>
+
+### 3.4 Installation & Finalization
+Executed the prerequisite check and began the final installation. The server successfully promoted itself to a Domain Controller and performed a mandatory reboot to finalize the new security database.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/53565ab4-2b88-41e4-9150-4a3567e6acb0" width="85%" alt="Installation Progress">
 </p>
 </details>
 
