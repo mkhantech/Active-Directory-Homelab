@@ -41,7 +41,7 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 2. **Name:** AD-Lab-Server.
 3. **ISO Image:** Select the downloaded Windows Server 2022 ISO.
 4. **Edition:** Ensure **Windows Server 2022 Standard Evaluation (Desktop Experience)** is selected.
-5. **Hardware:** Allocate **8192 MB (8GB) RAM** and **2 CPUs** for optimal performance.
+5. **Hardware:** Allocate **8192 MB (8GB) RAM** and **2 CPUs**.
 6. **Hard Disk:** Create a Virtual Hard Disk (VDI) with **50GB** of space.
 
 <br>
@@ -59,7 +59,7 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 5. **Finalization:** The system boots to the lock screen, ready for role configuration.
 
 <br>
-<img src="https://github.com/user-attachments/assets/708efce9-7834-4a88-885f-1f4ee99f060e" width="100%" alt="Windows Server Installation">
+<img src="https://github.com/user-attachments/assets/708efce9-7834-4a88-885f-1f4ee99f060e" width="100%" alt="Windows Server Edition Selection">
 </details>
 
 <details>
