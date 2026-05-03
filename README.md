@@ -67,16 +67,17 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 <summary><b>Step 3: Active Directory Domain Services (AD DS)</b></summary>
 <br>
 
-1. **Open Server Manager** -> Click **Add roles and features**.
-2. **Select Role:** Checked **Active Directory Domain Services** and confirmed required features.
-3. **Installation:** Clicked **Install** to deploy AD DS binaries.
-4. **Promotion:** Promoted the server to a Domain Controller for the `kevtech.com` forest.
+1. **Role Selection:** Launched the **Add Roles and Features Wizard** and selected **Active Directory Domain Services**, including all required management tools.
+2. **Forest Deployment:** Initiated the Domain Controller promotion and selected **Add a new forest**, defining the root domain name as `kevtech.com`.
+3. **Configuration:** Configured Domain Controller options, including DNS server roles and Global Catalog (GC) placement.
+4. **Promotion & Installation:** Executed the installation and promotion process, allowing the server to finalize the schema and reboot as a primary Domain Controller.
 
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/03fbb1b3-2dc6-4833-9ccc-478c8a3510e2" width="90%" alt="AD DS Role Installation">
-
-
+  <img src="https://github.com/user-attachments/assets/03fbb1b3-2dc6-4833-9ccc-478c8a3510e2" width="90%" alt="AD DS Role Selection">
+  <img src="https://github.com/user-attachments/assets/22551917-bca1-4fb2-8687-734066ec755e" width="90%" alt="Deployment Configuration">
+  <img src="https://github.com/user-attachments/assets/f781fbea-967f-42a6-b95f-6ce7253e89cd" width="90%" alt="Domain Controller Options">
+  <img src="https://github.com/user-attachments/assets/53565ab4-2b88-41e4-9150-4a3567e6acb0" width="90%" alt="Installation Progress">
 </p>
 </details>
 
