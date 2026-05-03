@@ -53,10 +53,17 @@ The virtual machine is provisioned within Oracle VirtualBox to support the Windo
 <details>
 <summary><b>Step 2: Windows Server Installation</b></summary>
 <br>
-Deployment of Windows Server 2022 (Desktop Experience). This installation provides the necessary GUI tools for administrative efficiency during the initial setup phase.
+Selecting the operating system edition. For this lab, **Windows Server 2022 Standard Evaluation (Desktop Experience)** is chosen to provide a full Graphical User Interface (GUI), which is essential for managing Active Directory tools visually.
 <br><br>
-<img src="<img width="1018" height="819" alt="Screenshot 2026-05-02 200259" src="https://github.com/user-attachments/assets/79352460-3aeb-4eaf-854f-4f1354ed81f2" />
-" width="100%">
+
+**Key Installation Details:**
+* **Architecture:** x64
+* **Edition:** Standard Evaluation
+* **Interface:** Desktop Experience (Full GUI)
+* **Status:** Operating System Selection Phase
+
+<br>
+<img src="https://github.com/user-attachments/assets/79352460-3aeb-4eaf-854f-4f1354ed81f2" width="100%" alt="Windows Server Edition Selection">
 </details>
 
 <details>
