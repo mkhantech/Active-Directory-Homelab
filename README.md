@@ -59,4 +59,34 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 5. **Finalization:** The system boots to the lock screen, ready for role configuration.
 
 <br>
-<img src="https://github.com/user-attachments/assets/708efce9-7834-4a88-885f-1f4ee99f060e" width="100%" alt="Windows Server
+<img src="https://github.com/user-attachments/assets/708efce9-7834-4a88-885f-1f4ee99f060e" width="100%" alt="Windows Server Installation">
+</details>
+
+<details>
+<summary><b>Step 3: Active Directory Domain Services (AD DS)</b></summary>
+<br>
+
+1. **Open Server Manager** -> Click **Add roles and features**.
+2. **Select Role:** Check **Active Directory Domain Services** -> Add Features -> Next.
+3. **Installation:** Click **Install** and wait for the "Configuration required" notification.
+4. **Promote Server:** Click the **yellow flag** in Server Manager -> Select **Promote this server to a domain controller**.
+5. **Deployment:** Select **Add a new forest** and set the Root Domain Name (e.g., `kevtech.com`).
+6. **Reboot:** The server will automatically restart to finalize the Domain Controller roles.
+
+<br>
+<img src="https://github.com/user-attachments/assets/8c15bddc-01a3-4686-8b78-2605158c7357" width="100%" alt="AD DS Role and Feature Selection">
+</details>
+
+---
+
+## Roadmap & Future Implementation
+* [ ] Configure static IP addressing and internal DNS resolution.
+* [ ] Design Organizational Unit (OU) structures for Users, Groups, and Computers.
+* [ ] Automate bulk user creation utilizing PowerShell scripting.
+* [ ] Join Windows client workstations to the production domain.
+* [ ] Implement GPOs for security hardening and desktop environment standardization.
+
+## Key Learning Outcomes
+* Proficiency in enterprise domain hierarchy and architecture.
+* Practical experience in server-side troubleshooting and log analysis.
+* Development of professional technical documentation habits essential for IT career growth.
