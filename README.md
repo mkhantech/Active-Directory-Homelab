@@ -94,6 +94,15 @@ Executed the promotion using the automated installation process. The final step 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/53565ab4-2b88-41e4-9150-4a3567e6acb0" width="85%" alt="Installation Progress">
 </p>
+
+### 3.5 Domain Validation
+Post-reboot, the login screen confirms the successful promotion by displaying the domain prefix (**KEVTECH\Administrator**). Accessing Server Manager's **Local Server** properties verifies the server's identity as `NY-DC-01` within the `kevtech.com` domain.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6e81747f-814d-4e13-94de-7db613ae5cc9" width="85%" alt="Domain Login Confirmation">
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/d4a0b9c5-10ef-4aa6-9d2e-dff3f0764575" width="85%" alt="Local Server Properties Verification">
+</p>
 </details>
 
 ---
