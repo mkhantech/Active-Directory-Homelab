@@ -59,7 +59,7 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 5. **Finalization:** The system boots to the lock screen, ready for role configuration.
 
 <br>
-<img src="https://github.com/user-attachments/assets/708efce9-7834-4a88-885f-1f4ee99f060e" width="100%" alt="Windows Server Edition Selection">
+<img src="https://github.com/user-attachments/assets/662b4742-45a3-4d67-98e5-95614b150373" width="100%" alt="Windows Server Installation Selection">
 </details>
 
 <details>
