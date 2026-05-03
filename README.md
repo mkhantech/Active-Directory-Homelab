@@ -68,28 +68,28 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 <br>
 
 ### 3.1 Role Selection
-Initiated the **Add Roles and Features Wizard** within Server Manager. Selected **Active Directory Domain Services** and confirmed the inclusion of all required management tools and sub-features.
+Initiated the **Add Roles and Features Wizard** within Server Manager. Selected **Active Directory Domain Services** to begin the installation of the core directory database and management tools.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/03fbb1b3-2dc6-4833-9ccc-478c8a3510e2" width="85%" alt="AD DS Role Selection">
 </p>
 
-### 3.2 Forest Configuration
-Selected **"Add a new forest"** as the deployment operation. Defined the Root Domain Name as `kevtech.com`, establishing the top-level container for the directory service.
+### 3.2 Post-Deployment Configuration
+After the binaries were installed, I accessed the **Post-Deployment Configuration** via the Server Manager notification flag to begin the promotion of the server to a Domain Controller.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/22551917-bca1-4fb2-8687-734066ec755e" width="85%" alt="Deployment Configuration">
+  <img src="https://github.com/user-attachments/assets/22551917-bca1-4fb2-8687-734066ec755e" width="85%" alt="Promotion Trigger">
 </p>
 
-### 3.3 Domain Controller Options
-Configured the **Domain Name System (DNS)** server and **Global Catalog (GC)** roles. Set the Directory Services Restore Mode (DSRM) password, which is critical for future AD recovery scenarios.
+### 3.3 Forest & Domain Naming
+Selected **"Add a new forest"** and established the Root Domain Name as `kevtech.com`. This step creates the logical boundary for the entire Active Directory environment.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f781fbea-967f-42a6-b95f-6ce7253e89cd" width="85%" alt="Domain Controller Options">
+  <img src="https://github.com/user-attachments/assets/f781fbea-967f-42a6-b95f-6ce7253e89cd" width="85%" alt="Forest Naming">
 </p>
 
-### 3.4 Installation & Finalization
-Executed the prerequisite check and began the final installation. The server successfully promoted itself to a Domain Controller and performed a mandatory reboot to finalize the new security database.
+### 3.4 Installation & PowerShell Execution
+Executed the promotion using the automated installation process. The final step involved the system verifying prerequisites and configuring the NTDS settings before a mandatory system reboot.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/53565ab4-2b88-41e4-9150-4a3567e6acb0" width="85%" alt="Installation Progress">
