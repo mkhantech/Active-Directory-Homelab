@@ -39,27 +39,28 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 
 1. **Open VirtualBox** -> Select **New**.
 2. **Name:** AD-Lab-Server.
-3. **ISO Image:** Select the downloaded Windows Server 2022 ISO.
-4. **Edition:** Ensure **Windows Server 2022 Standard Evaluation (Desktop Experience)** is selected.
-5. **Hardware:** Allocate **8192 MB (8GB) RAM** and **2 CPUs**.
-6. **Hard Disk:** Create a Virtual Hard Disk (VDI) with **50GB** of space.
+3. **Hardware:** Allocated **8192 MB (8GB) RAM** and **2 CPUs**.
+4. **Storage:** Created a **50GB** virtual hard disk (VDI).
 
 <br>
-<img src="https://github.com/user-attachments/assets/f36ea48c-6081-4465-be32-04e11fd68703" width="100%" alt="VirtualBox Configuration Settings">
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f36ea48c-6081-4465-be32-04e11fd68703" width="90%" alt="VirtualBox Manager View">
+</p>
 </details>
 
 <details>
 <summary><b>Step 2: Windows Server Installation</b></summary>
 <br>
 
-1. **Power on VM** -> Follow the Windows Setup prompts.
-2. **OS Selection:** Choose **Windows Server 2022 Standard Evaluation (Desktop Experience)**.
-3. **Installation Type:** Select **Custom: Install Microsoft Server Operating System only (advanced)**.
-4. **Initial Setup:** Create a strong Administrator password and rename the server to **NY-DC-01**.
-5. **Finalization:** The system boots to the lock screen, ready for role configuration.
+1. **Power on VM** -> Followed the Windows Setup prompts.
+2. **OS Selection:** Chose **Windows Server 2022 Standard Evaluation (Desktop Experience)**.
+3. **Installation Type:** Selected **Custom** to perform a clean install.
+4. **Initial Setup:** Set the Administrator password and arrived at the lock screen.
 
 <br>
-<img src="https://github.com/user-attachments/assets/662b4742-45a3-4d67-98e5-95614b150373" width="100%" alt="Windows Server Installation Selection">
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/662b4742-45a3-4d67-98e5-95614b150373" width="90%" alt="Windows Server OS Selection">
+</p>
 </details>
 
 <details>
@@ -67,26 +68,26 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 <br>
 
 1. **Open Server Manager** -> Click **Add roles and features**.
-2. **Select Role:** Check **Active Directory Domain Services** -> Add Features -> Next.
-3. **Installation:** Click **Install** and wait for the "Configuration required" notification.
-4. **Promote Server:** Click the **yellow flag** in Server Manager -> Select **Promote this server to a domain controller**.
-5. **Deployment:** Select **Add a new forest** and set the Root Domain Name (e.g., `kevtech.com`).
-6. **Reboot:** The server will automatically restart to finalize the Domain Controller roles.
+2. **Select Role:** Checked **Active Directory Domain Services** and confirmed required features.
+3. **Installation:** Clicked **Install** to deploy AD DS binaries.
+4. **Promotion:** Promoted the server to a Domain Controller for the `kevtech.com` forest.
 
 <br>
-<img src="https://github.com/user-attachments/assets/8c15bddc-01a3-4686-8b78-2605158c7357" width="100%" alt="AD DS Role and Feature Selection">
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8c15bddc-01a3-4686-8b78-2605158c7357" width="90%" alt="AD DS Role Installation">
+</p>
 </details>
 
 ---
 
 ## Roadmap & Future Implementation
-* [ ] Configure static IP addressing and internal DNS resolution.
-* [ ] Design Organizational Unit (OU) structures for Users, Groups, and Computers.
-* [ ] Automate bulk user creation utilizing PowerShell scripting.
-* [ ] Join Windows client workstations to the production domain.
-* [ ] Implement GPOs for security hardening and desktop environment standardization.
+* [ ] Configure static IP and DNS settings.
+* [ ] Create Organizational Units (OUs) for Users and Computers.
+* [ ] Bulk-create users using PowerShell scripts.
+* [ ] Join a Windows 10/11 client machine to the domain.
+* [ ] Implement GPOs for security hardening and standardization.
 
 ## Key Learning Outcomes
 * Proficiency in enterprise domain hierarchy and architecture.
 * Practical experience in server-side troubleshooting and log analysis.
-* Development of professional technical documentation habits essential for IT career growth.
+* Development of professional technical documentation habits.
