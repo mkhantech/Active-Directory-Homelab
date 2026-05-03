@@ -45,7 +45,7 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 6. **Hard Disk:** Create a Virtual Hard Disk (VDI) with **50GB** of space.
 
 <br>
-<img src="https://github.com/user-attachments/assets/6dd65478-9d0d-4e7e-a34b-e03986253d8b" width="100%" alt="VirtualBox Configuration Settings">
+<img src="https://github.com/user-attachments/assets/f36ea48c-6081-4465-be32-04e11fd68703" width="100%" alt="VirtualBox Configuration Settings">
 </details>
 
 <details>
