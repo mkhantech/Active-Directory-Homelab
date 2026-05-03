@@ -26,8 +26,8 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 
 ## Project Status
 > [!NOTE]
-> **Current Phase:** Environment Setup
-> The virtual infrastructure is currently being provisioned and configured.
+> **Current Phase:** Active Directory Promotion
+> The core server OS is installed, and the environment is being promoted to a Domain Controller.
 
 ---
 
@@ -36,15 +36,13 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 <details>
 <summary><b>Step 1: Virtual Machine Configuration</b></summary>
 <br>
-The virtual machine is provisioned within Oracle VirtualBox to support the Windows Server 2022 environment. The resource allocation is optimized for the Domain Controller role, ensuring stable performance for identity management tasks.
-<br><br>
 
-**Technical Specifications:**
-* **VM Name:** AD-Lab-Server
-* **Base Memory:** 8192 MB (8GB)
-* **Processors:** 2 CPUs
-* **Storage:** 50.00 GB VDI
-* **Network:** NAT (Initial Setup)
+1. **Open VirtualBox** -> Select **New**.
+2. **Name:** AD-Lab-Server (or preferred naming convention).
+3. **ISO Image:** Select the downloaded Windows Server 2022 ISO.
+4. **Edition:** Ensure **Windows Server 2022 Standard Evaluation (Desktop Experience)** is selected.
+5. **Hardware:** Allocate **8GB RAM** and **2 CPUs** for optimal performance.
+6. **Hard Disk:** Create a Virtual Hard Disk (VDI) with **50GB** of space.
 
 <br>
 <img src="https://github.com/user-attachments/assets/cbafd8b9-ae79-42ed-8fa9-ef8c8d3acefc" width="100%" alt="VirtualBox Configuration Settings">
@@ -53,33 +51,42 @@ The virtual machine is provisioned within Oracle VirtualBox to support the Windo
 <details>
 <summary><b>Step 2: Windows Server Installation</b></summary>
 <br>
-Selecting the operating system edition. For this lab, **Windows Server 2022 Standard Evaluation (Desktop Experience)** is chosen to provide a full Graphical User Interface (GUI), which is essential for managing Active Directory tools visually.
-<br><br>
 
-**Key Installation Details:**
-* **Architecture:** x64
-* **Edition:** Standard Evaluation
-* **Interface:** Desktop Experience (Full GUI)
-* **Status:** Operating System Selection Phase
+1. **Power on VM** -> Follow the Windows Setup prompts.
+2. **Installation Type:** Select **Custom: Install Microsoft Server Operating System only (advanced)**.
+3. **Partitioning:** Select the unallocated space and click **Next**.
+4. **Initial Setup:** Create a strong Administrator password upon completion.
+5. **Post-Install:** Rename the server (e.g., `MY-DC01`) and restart to apply changes.
 
 <br>
 <img src="https://github.com/user-attachments/assets/79352460-3aeb-4eaf-854f-4f1354ed81f2" width="100%" alt="Windows Server Edition Selection">
 </details>
 
 <details>
-<summary><b>Step 3: Active Directory Domain Services (Pending)</b></summary>
+<summary><b>Step 3: Active Directory Domain Services (AD DS)</b></summary>
 <br>
-*Upcoming:* Installation of the AD DS role and promotion of the server to a Domain Controller for the `kevtech.local` forest.
+
+1. **Open Server Manager** -> Click **Add roles and features**.
+2. **Select Role:** Check **Active Directory Domain Services** -> Add Features -> Next.
+3. **Installation:** Click **Install** and wait for the "Configuration required" notification.
+4. **Promote Server:** Click the **yellow flag** in Server Manager -> Select **Promote this server to a domain controller**.
+5. **Deployment:** Select **Add a new forest**.
+6. **Root Domain Name:** `kevtech.com` (or preferred domain name).
+7. **Automation (Optional):** Utilize the **PowerShell script** method for automated forest promotion.
+8. **Reboot:** The server will automatically restart to finalize the Domain Controller roles.
+
+<br>
+<img src="https://github.com/user-attachments/assets/6504a742-f909-4720-bc6b-31a8128359f8" width="100%" alt="AD DS Configuration Wizard">
 </details>
 
 ---
 
 ## Roadmap & Future Implementation
-* Configure static IP addressing and internal DNS resolution.
-* Design Organizational Unit (OU) structures for Users, Groups, and Computers.
-* Automate bulk user creation utilizing PowerShell scripting.
-* Join Windows client workstations to the production domain.
-* Implement GPOs for security hardening and desktop environment standardization.
+* [ ] Configure static IP addressing and internal DNS resolution.
+* [ ] Design Organizational Unit (OU) structures for Users, Groups, and Computers.
+* [ ] Automate bulk user creation utilizing PowerShell scripting.
+* [ ] Join Windows client workstations to the production domain.
+* [ ] Implement GPOs for security hardening and desktop environment standardization.
 
 ## Key Learning Outcomes
 * Proficiency in enterprise domain hierarchy and architecture.
