@@ -55,7 +55,8 @@ The virtual machine is provisioned within Oracle VirtualBox to support the Windo
 <br>
 Deployment of Windows Server 2022 (Desktop Experience). This installation provides the necessary GUI tools for administrative efficiency during the initial setup phase.
 <br><br>
-<img src="https://via.placeholder.com/800x450?text=Placeholder:+Windows+Server+Installation+Screenshot" width="100%">
+<img src="<img width="1018" height="819" alt="Screenshot 2026-05-02 200259" src="https://github.com/user-attachments/assets/79352460-3aeb-4eaf-854f-4f1354ed81f2" />
+" width="100%">
 </details>
 
 <details>
