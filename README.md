@@ -78,14 +78,14 @@ Initiated the **Add Roles and Features Wizard** within Server Manager. Selected 
 After the binaries were installed, I accessed the **Post-Deployment Configuration** via the Server Manager notification flag to begin the promotion of the server to a Domain Controller.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/22551917-bca1-4fb2-8687-734066ec755e" width="85%" alt="Promotion Trigger">
+  <img src="https://github.com/user-attachments/assets/f781fbea-967f-42a6-b95f-6ce7253e89cd" width="85%" alt="Forest Naming">
 </p>
 
 ### 3.3 Forest & Domain Naming
 Selected **"Add a new forest"** and established the Root Domain Name as `kevtech.com`. This step creates the logical boundary for the entire Active Directory environment.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f781fbea-967f-42a6-b95f-6ce7253e89cd" width="85%" alt="Forest Naming">
+  
 </p>
 
 ### 3.4 Installation & PowerShell Execution
