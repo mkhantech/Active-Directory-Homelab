@@ -75,6 +75,8 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/03fbb1b3-2dc6-4833-9ccc-478c8a3510e2" width="90%" alt="AD DS Role Installation">
+
+
 </p>
 </details>
 
