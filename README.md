@@ -96,11 +96,17 @@ Verified all prerequisites and executed the promotion. The system utilized a bac
 </p>
 
 ### 3.5 Domain Validation
-Following the mandatory reboot, I verified the success of the promotion by confirming the **Domain Login** prompt. The Server Manager dashboard now correctly identifies the system as part of the `kevtech.com` domain.
+To ensure the promotion was successful, I performed a final validation check of the domain environment:
 
+**Domain Login Verification:** Confirmed that the server now requires a domain-level login, indicated by the **KEVTECH\Administrator** prompt.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6e81747f-814d-4e13-94de-7db613ae5cc9" width="85%" alt="Domain Login Confirmation">
-  <br><br>
+</p>
+
+<br>
+
+**System Properties Verification:** Verified within Server Manager that the server is officially joined to the `kevtech.com` domain with the correct hostname (`NY-DC-01`).
+<p align="center">
   <img src="https://github.com/user-attachments/assets/d4a0b9c5-10ef-4aa6-9d2e-dff3f0764575" width="85%" alt="Local Server Properties Verification">
 </p>
 </details>
