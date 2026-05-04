@@ -37,10 +37,10 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 <summary><b>Step 1: Virtual Machine Configuration</b></summary>
 <br>
 
-1. **Open VirtualBox** -> Select **New**.
-2. **Name:** AD-Lab-Server.
-3. **Hardware:** Allocated **8192 MB (8GB) RAM** and **2 CPUs**.
-4. **Storage:** Created a **50GB** virtual hard disk (VDI).
+1. **Hypervisor Setup:** Launched Oracle VirtualBox and initialized a new virtual machine instance.
+2. **Resource Allocation:** Provisioned **8GB (8192MB) of RAM** and **2 Virtual CPUs** to ensure stable server performance.
+3. **Storage Provisioning:** Created a **50GB Virtual Hard Disk (VDI)** with dynamic allocation for the OS installation.
+4. **Boot Media:** Mounted the Windows Server 2022 ISO to the virtual optical drive for initial deployment.
 
 <br>
 <p align="center">
@@ -52,10 +52,10 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 <summary><b>Step 2: Windows Server Installation</b></summary>
 <br>
 
-1. **Power on VM** -> Followed the Windows Setup prompts.
-2. **OS Selection:** Chose **Windows Server 2022 Standard Evaluation (Desktop Experience)**.
-3. **Installation Type:** Selected **Custom** to perform a clean install.
-4. **Initial Setup:** Set the Administrator password and arrived at the lock screen.
+1. **OS Initialization:** Booted the VM and selected **Windows Server 2022 Standard Evaluation (Desktop Experience)**.
+2. **Disk Partitioning:** Performed a **Custom Installation** to ensure a clean partition on the virtual drive.
+3. **System Naming:** Renamed the server to **NY-DC-01** to adhere to enterprise naming conventions.
+4. **Security Setup:** Established a complex Administrative password to secure the local system before domain promotion.
 
 <br>
 <p align="center">
@@ -68,35 +68,35 @@ This project documents the deployment of a hands-on Active Directory (AD) homela
 <br>
 
 ### 3.1 Role Selection
-Initiated the **Add Roles and Features Wizard** within Server Manager. Selected **Active Directory Domain Services** to begin the installation of the core directory database and management tools.
+Utilized the **Add Roles and Features Wizard** within Server Manager to install the **Active Directory Domain Services** role. This included all necessary RSAT (Remote Server Administration Tools) for forest management.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/03fbb1b3-2dc6-4833-9ccc-478c8a3510e2" width="85%" alt="AD DS Role Selection">
 </p>
 
 ### 3.2 Post-Deployment Configuration
-After the binaries were installed, I accessed the **Post-Deployment Configuration** via the Server Manager notification flag to begin the promotion of the server to a Domain Controller.
+Post-installation, I accessed the deployment thread via the Server Manager notification flag to initiate the **Promotion to a Domain Controller**.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/22551917-bca1-4fb2-8687-734066ec755e" width="85%" alt="Promotion Trigger">
 </p>
 
 ### 3.3 Forest & Domain Naming
-Selected **"Add a new forest"** and established the Root Domain Name as `kevtech.com`. This step creates the logical boundary for the entire Active Directory environment.
+Configured the deployment operation as **"Add a new forest"** and established the Root Domain Name as `kevtech.com`. This successfully initialized the directory partition.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f781fbea-967f-42a6-b95f-6ce7253e89cd" width="85%" alt="Forest Naming">
 </p>
 
 ### 3.4 Installation & PowerShell Execution
-Executed the promotion using the automated installation process. The final step involved the system verifying prerequisites and configuring the NTDS settings before a mandatory system reboot.
+Verified all prerequisites and executed the promotion. The system utilized a background PowerShell script to automate the configuration of the NTDS database and SYSVOL folders.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/53565ab4-2b88-41e4-9150-4a3567e6acb0" width="85%" alt="Installation Progress">
 </p>
 
 ### 3.5 Domain Validation
-Post-reboot, the login screen confirms the successful promotion by displaying the domain prefix (**KEVTECH\Administrator**). Accessing Server Manager's **Local Server** properties verifies the server's identity as `NY-DC-01` within the `kevtech.com` domain.
+Following the mandatory reboot, I verified the success of the promotion by confirming the **Domain Login** prompt. The Server Manager dashboard now correctly identifies the system as part of the `kevtech.com` domain.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6e81747f-814d-4e13-94de-7db613ae5cc9" width="85%" alt="Domain Login Confirmation">
@@ -115,6 +115,6 @@ Post-reboot, the login screen confirms the successful promotion by displaying th
 * [ ] Implement GPOs for security hardening and standardization.
 
 ## Key Learning Outcomes
-* Proficiency in enterprise domain hierarchy and architecture.
-* Practical experience in server-side troubleshooting and log analysis.
-* Development of professional technical documentation habits.
+* **Directory Architecture:** Understanding of forest roots, domain partitions, and schema initialization.
+* **Enterprise Identity:** Experience in transitioning from local SAM accounts to centralized Domain Accounts.
+* **Server Management:** Proficiency in role-based deployment and post-installation troubleshooting.
